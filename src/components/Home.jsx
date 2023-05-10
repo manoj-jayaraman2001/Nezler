@@ -27,18 +27,18 @@ const Home = () => {
   });
   const companyImages = Object.values(Images());
   const Components = companyImages.map((value, Index) => {
-    return <img className="companyLogo" src={value.path} key={Index} />;
+    return <img key={Index} className="companyLogo" src={value.path}  />;
   });
 
   const statsComponents = stats.map((value, Index) => {
     return (
-      <>
+      <div key={Index}>
         <div className="statComponent">
-          <img key={Index} src={value.logo} alt={`${value.about}`} />
+          <img src={value.logo} alt={`${value.about}`} />
           <h2>{`${value.stat} ${value.unit}+`}</h2>
           <p>{value.about}</p>
         </div>
-      </>
+      </div>
     );
   });
 
@@ -87,7 +87,7 @@ const Home = () => {
 
       <div className="stats">{statsComponents}</div>
 
-      <div className="contactForm">
+      <div className="contactForm" style={{padding: '1.5em'}}>
         <p>CONTACT FORM</p>
         <form action="">
           <div>
