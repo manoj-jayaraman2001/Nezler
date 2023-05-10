@@ -1,0 +1,18 @@
+
+@import '../assets/assets.scss';
+.aboutService{
+    width: 75%;
+    margin: 0 auto;
+    font-family: $secondaryFont;
+    letter-spacing: 1.1px;
+    line-height: 1.2;
+    h1{
+        font-size: 28px;
+    }
+    p{
+        font-size: 15px;
+    }
+    li{
+        margin-top: 1em;
+    }
+}
