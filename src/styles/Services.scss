@@ -1,0 +1,71 @@
+@import "../assets/assets.scss";
+
+.services {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 2em;
+}
+.heading {
+  font-family: $secondaryFont;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 1.5em;
+    padding: 2em;
+}
+
+.serviceCard {
+  background-color: white;
+  box-shadow: $boxShadow;
+  width: 22em;
+  padding: 1em;
+  font-family: $primaryFont;
+  line-height: 1.2;
+  font-size: 13.5px;
+  border-radius: 12px;
+  transition:  0.4s ease-in;
+  cursor: pointer;
+  p {
+    color: gray;
+  }
+  img {
+    width: 100px;
+    height: fit-content;
+  }
+  h3 {
+    font-size: 1.4em;
+  }
+}
+
+.serviceCard:hover{
+    transform: translateY(-6px);
+    
+}
+
+@media (max-width: 1170px){
+    .container{
+       grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 784px){
+    .services{
+        font-size: 12px;
+       }
+    .container{
+        grid-template-columns: 1fr;
+    }
+    .serviceCard{
+        width: 100%;
+    }
+}
+
+@media (max-width: 540px){
+    .container{
+        font-size: 10px;
+    }
+}

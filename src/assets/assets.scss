@@ -1,0 +1,50 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
+
+$primaryFont : 'Lato' , sans-serif;
+$secondaryFont: 'Open Sans', sans-serif;
+
+$primaryColor : #ffdd00;
+
+$ubuntuFont : 'Ubuntu' , 'sans-serif';
+$oxygen : 'Oxygen' ,'sans-serif';
+$boxShadow : 0 2px 4px rgba(0,0,0,0.2);
+
+
+.button{
+    background-color: rgb(248, 248, 52);
+    border: none;
+    padding: 16px 24px;
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+    font-family: $primaryFont;
+    letter-spacing: 2px;
+    width: fit-content;
+    cursor: pointer;
+    margin: 0 auto;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover{
+    background-color: $primaryColor;
+   
+}
+.button:active{
+    transform: translateY(4px);
+}
+
+
+
+.heading{
+    font-size: 4em;
+    margin: 0 auto;
+    color: $primaryColor;
+    letter-spacing: 3px;
+    text-shadow: 0 1px  0 black;
+}

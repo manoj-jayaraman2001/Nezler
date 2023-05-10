@@ -1,0 +1,42 @@
+
+@import '../assets/assets.scss';
+
+.Footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding: 4em;
+    gap: 2em;
+    color: white;
+    img{
+        width: 16em;
+        height: fit-content;
+    }
+    .icon{
+      
+        font-size: 1.5em;
+    }
+    .icon:hover{
+        color: $primaryColor;
+        transition: 0.5s ease;
+    }
+
+}
+
+.socialIcons{
+    display: flex;
+    gap: 1.5em;
+    cursor: pointer;
+}
+
+.terms{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    font-family: $ubuntuFont;
+    p{
+        color: $primaryColor;
+        cursor: pointer;
+    }
+}

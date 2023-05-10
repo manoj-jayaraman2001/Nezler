@@ -1,0 +1,141 @@
+
+@import '../assets/assets.scss';
+
+
+.contact{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+    font-family: $secondaryFont;
+    text-align: center;
+    padding-bottom: 3em;
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        width: 90%;
+    }
+    .heading{
+        font-size: 4em;
+        margin: 0 auto;
+        color: $primaryColor;
+        letter-spacing: 3px;
+        text-shadow: 0 1px  0 black;
+    }
+    p{
+        font-size: 1.2em;
+        width: 70%;
+        color: gray;
+    }
+    div{
+        display: flex;
+        justify-content: space-between;
+        input{
+            width: 48%;
+            font-family: $ubuntuFont;
+        }
+    }
+    input {
+        padding: 1em;
+        font-size: 1.2em;
+        font-family: $ubuntuFont;
+    }
+    select{
+        padding: 0.8em;
+        font-size: 1.2em;
+    }
+
+    textarea{
+        resize: none;
+        padding: 0.5em;
+        font-size: 1.2em;
+        font-family: $ubuntuFont;
+    }
+}
+
+.address{
+    display: flex;
+    width: 80%;
+    margin:  3em auto;
+    justify-content: center;
+    gap: 4em;
+    
+}
+.addressMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.addressContent{
+    display: flex;
+    align-items: center;
+    align-items: center;
+    gap: 1.5em;
+    font-family: $secondaryFont;
+    p{
+        font-size: 14px;
+        color: gray;
+        margin: 0;
+    }
+    .head{
+        font-size: 18px;
+        color: black;
+        font-weight: 600;
+    }
+}
+.subAddress{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+}
+.contactIcon{
+    font-size: 28px;
+    
+}
+
+.map{
+    border: 3px solid green;
+    padding: 0.8em;
+}
+
+
+@media(max-width: 1024px){
+    .address{
+        flex-direction: column;
+        justify-content: center;
+
+        iframe{
+            width: 100%
+        }
+    }
+    .addressMain{
+        gap: 1.5em;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 748px){
+    .contactIcon{
+        font-size: 24px;
+    }
+    
+}
+
+@media (max-width: 548px){
+    .contact{
+        font-size: 10px;
+    }
+    .button{
+        font-size: 10px;
+    }
+    
+    .contactIcon{
+        font-size: 20px;
+        
+    }
+}
